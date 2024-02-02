@@ -1,0 +1,14 @@
+@import '../../assets/styling/abstracts/globals';
+
+.container {
+  @media (min-width: 700px) {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    color: $main-color;
+    font-weight: 600;
+    text-align: center;
+  }
+}

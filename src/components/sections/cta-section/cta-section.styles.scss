@@ -1,0 +1,21 @@
+@import '../../../assets/styling/abstracts/globals';
+
+.cta-container {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+
+  .cta-title {
+    @include sectionTitle;
+  }
+
+  .cta-paragraph{
+    margin: 3.2rem 0;
+    font-size: clamp(1.8em, 40vw, 2.4em);
+    font-weight: 400;
+  }
+
+  @media (min-width: 835px) {
+    width: 50%;
+  }
+}

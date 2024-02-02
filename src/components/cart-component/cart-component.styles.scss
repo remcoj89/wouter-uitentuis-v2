@@ -1,0 +1,38 @@
+@import '../../assets/styling/abstracts/globals';
+
+.card{
+  color: $main-color;
+  padding : 0 2.4rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.8rem;
+  flex: 1 0 0;
+
+  .card-title{
+    @include sectionTitle;
+  }
+
+  .read-more-btn{
+    font-size: 1.6rem;
+    color: $sub-color;
+    cursor: pointer;
+  }
+
+  &.open {
+    height: auto;
+  }
+
+  &.open .paragraph-2 {
+    opacity: 1;
+    transition: width 2s, height .5s;
+    animation: example .5s ease-in-out;
+  }
+}
+
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

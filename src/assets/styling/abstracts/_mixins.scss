@@ -1,0 +1,21 @@
+@import '../base/_globals';
+@import './variables';
+
+@mixin Logo {
+  font-family: $font-sanchez;
+  font-size: 3.2rem;
+  line-height: normal;
+  color :$white-color;
+}
+
+@mixin shrinkLabel {
+  top: -14px;
+  font-size: 12px;
+  color: $main-color;
+}
+
+@mixin sectionTitle {
+  font-size: clamp(1rem, 30vw, 2rem);
+  font-weight: 600;
+  font-family: $font-sanchez;
+}
