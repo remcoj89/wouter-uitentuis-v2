@@ -60,7 +60,7 @@ const ContactForm = () => {
           name='message'
           value={message}
         />
-        <Button type='submit' buttonType={'submitButton'}>Verzenden</Button>
+        <Button type='submit' buttonType={'submitButton'} location="">Verzenden</Button>
       </form>
     </div>
   );

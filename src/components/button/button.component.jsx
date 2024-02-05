@@ -26,10 +26,7 @@ Button.propTypes = {
   ]).isRequired,
 
   buttonType: PropTypes.oneOf(Object.keys(BUTTON_TYPE_CLASSES)).isRequired,
-  location: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number,
-  ]).isRequired,
+  location: PropTypes.string.isRequired,
 };
 
 export default Button
